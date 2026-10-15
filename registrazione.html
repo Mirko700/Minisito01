@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrazione - Componenti PC</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h2>🖥️ PC Hardware</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="chi-siamo.html">Chi Siamo</a>
+            <a href="pagina3.html">CPU & RAM</a>
+            <a href="pagina4.html">GPU & SSD</a>
+            <a href="registrazione.html" class="active">Registrazione</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Modulo di Registrazione</h1>
+        <form action="conferma.html" method="GET">
+            <label>Nome e Cognome:</label>
+            <input type="text" name="nome" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Password:</label>
+            <input type="password" name="password" required>
+
+            <label>Componente PC preferita:</label>
+            <select name="componente" required>
+                <option value="cpu">Processore (CPU)</option>
+                <option value="gpu">Scheda Video (GPU)</option>
+                <option value="ram">Memoria RAM</option>
+                <option value="ssd">SSD NVMe</option>
+            </select>
+
+            <button type="submit">Invia Registrazione</button>
+        </form>
+    </main>
+
+    <footer><p>&copy; 2026 - Progetto MINISITO01</p></footer>
+</body>
+</html>
